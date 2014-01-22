@@ -1,0 +1,81 @@
+
+@import "variables.less";
+@import "mixins/mixins.less";
+
+nav.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+
+
+	ul.navbar-nav{
+		float: right;
+			position: relative;
+			top: @menuOffsetTop;
+			right: @menuOffsetRight;
+		
+		background-color: @menuBackground;
+		> li{
+			
+			> a{
+				font-family: @menuFontFamily;
+				text-transform: @menu-text-transform;
+				font-size: @menuFontSize;
+				font-weight: @menuFontWeight;
+				color: @menuText;
+				background-color: @menuItemBackground;
+				.border-radius(@menu-item-border-radius);
+				
+				&:hover{
+					color: @menuTextHover;
+					background-color: @menuItemBackgroundHover;
+				}
+			}
+			
+			&.active{
+				> a{
+					color: @menuTextActive;
+					background-color: @menuItemBackgroundActive;
+				}
+			}
+			
+			&.dropdown{
+				a{
+					i.fa-dropdown{
+						margin-left: 10px;
+						&:before {
+							content: @menudropdownIcon;
+						}
+					}
+				}
+			}
+		}
+		
+		ul.dropdown-menu{
+			background-color: @menuDropdownBackground;
+			> li{
+				> a{
+					font-size: @menuDropdownFontSize;
+					font-weight: @menuDropdownFontWeight;
+					background-color: @menuDropdownItemBackground;
+					color: @menuDropdownText;
+					
+					&:hover{
+						background-color: @menuDropdownItemBackgroundHover;
+						color: @menuDropdownTextHover;
+					}
+				}
+				&not(.divider), &not(.dropdown-header){
+					
+				}
+				&.dropdown-header{
+					span{
+						color: @menuDropdownHeaderText;
+					}
+				}
+				&.divider{
+					background-color:  @menuDividerColor;
+				}
+			}
+		}
+	}
+}

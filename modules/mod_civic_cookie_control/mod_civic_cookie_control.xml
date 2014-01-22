@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 	type="module"	version="2.5"	client="site"	method="upgrade">
+	<name>Joostrap Civic Cookie Control</name>
+	<author>Philip Locke</author>
+	<creationDate>July 2012</creationDate>
+	<copyright>Copyright (C) 2011 - 2012. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>fastnetwebdesign@gmail.com</authorEmail>
+	<authorUrl>www.joostrap.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Joostrap Civic Cookie Control</description>
+	<files>
+		<filename module="mod_civic_cookie_control">mod_civic_cookie_control.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>		
+		<filename>mod_civic_cookie_control.xml</filename>
+	</files>
+	<languages>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="introText" type="textarea" default="This site uses some unobtrusive cookies to store information on your computer." label="Intro Text" description="Enter the introduction text that should appear" rows="10" cols="40" />
+				<field name="fullText" type="textarea" default="Some cookies on this site are essential, and the site wont work as expected without them. These cookies are set when you submit a form, login or interact with the site by doing something that goes beyond clicking on simple links. We also use some non-essential cookies to anonymously track visitors or enhance your experience of the site. If you are not happy with this, we will not set these cookies but some nice features of the site may be unavailable. To control third party cookies, you can also adjust your browser settings. By using our site you accept the terms of our Privacy Policy." label="Full Text" description="Enter the full text that should appear" rows="10" cols="40" />
+				<field name="privacyURL" type="text" default="http://www..." size="40" label="Privacy Policy URL" description="Enter the full URL to your Privacy Policy" />
+				 <field name="position" type="radio" default="right" label="Position Left or Right" description="Choose the bottom position">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="shape" type="radio" default="triangle" label="Shape" description="Choose the shape">
+					<option value="triangle">Triangle</option>
+					<option value="diamond">Diamond</option>
+				</field>
+				<field name="theme" type="radio" default="light" label="Theme" description="Choose the theme">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+				<field name="autoHide" type="text" default="6000" size="40" label="Auto Hide Time" description="Enter a time. 6000 = 6 seconds" />
+				 <field name="subdomains" type="radio" default="true" label="Include Sub Domains" description="Include Sub Domains">
+					<option value="true">Include</option>
+					<option value="false">Dont Include</option>
+				</field>
+				 <field name="consent" type="radio" default="information_only" label="Consent" description="Choose the consent">
+					<option value="implicit">Implicit</option>
+					<option value="explicit">Explicit</option>
+					<option value="information_only">Information Only</option>
+				</field>
+				<field name="countries" type="text" default="United Kingdom" size="40" label="Countries" description="List your countries" />
+				<field name="gAnalytics" type="text" default="" size="40" label="Google Analytics Code" description="Enter your Google Analytics code" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,1 @@
+<?php die("Access Denied"); ?>#x#s:260:"s:251:"a:4:{s:4:"root";s:69:"/var/www/Installers/joomla3_installer/templates/gantry/less/menu.less";s:8:"compiled";s:0:"";s:5:"files";a:1:{s:69:"/var/www/Installers/joomla3_installer/templates/gantry/less/menu.less";i:1389272004;}s:7:"updated";i:1389272009;}";";
